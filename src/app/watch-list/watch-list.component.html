@@ -1,11 +1,9 @@
-<!--<div class="watch-list" *ngif="User && User.selectedAccount && User.selectedAccount.WatchList">-->
-  <!--<md-list-item *ngFor="let tickerSymbol of User.selectedAccount.WatchList.Symbols">-->
-    <!--<h3 md-line> {{tickerSymbol.Symbol}} </h3>-->
-    <!--<p md-line> {{tickerSymbol.Ask}} </p>-->
-    <!--<p md-line class="demo-2"> {{tickerSymbol.Bid}} </p>-->
-  <!--</md-list-item>-->
-<!--</div>-->
-<div>
-  User: {{User}}
+<div class="watch-list" *ngIf="User && User.Account && User.Account.WatchList">
+  <md-list-item *ngFor="let tickerSymbol of User.Account.WatchList.Symbols">
+    <h3 md-line> {{tickerSymbol.Symbol}} </h3>
+    <p md-line> {{tickerSymbol.Ask}} </p>
+    <p md-line class="demo-2"> {{tickerSymbol.Bid}} </p>
+  </md-list-item>
 </div>
+
 
